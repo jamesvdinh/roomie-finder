@@ -12,25 +12,73 @@ function App() {
     "religion": '',
     "dietpref": '',
   });
-  const [data, setData] = useState([{}]);
-  const keys = Object.keys(formData);
+  const [accounts, setAccounts] = useState(
+    [
+      {
+          "name": "kid",
+          "age": 19,
+          "gender": "male",
+          "num_roommates": 4,
+          "year": 1,
+          "major": "CS",
+          "interests": "no",
+          "religion": "budd",
+          "email": "kid@gmail.com"
+  
+      },
+      {
+          "name": "adult",
+          "age": 25,
+          "gender": "male",
+          "num_roommates": 4,
+          "year": 3,
+          "major": "CS",
+          "interests": "la",
+          "religion": "chr",
+          "email": "adult@gmail.com"
+      },
+      {
+          "name": "girl",
+          "age": 27,
+          "gender": "female",
+          "num_roommates": 4,
+          "year": 1,
+          "major": "Data",
+          "interests": "ball",
+          "religion": "dao",
+          "email": "girl@gmail.com"
+      },
+      {
+          "name": "abc",
+          "age": 22,
+          "gender": "female",
+          "num_roommates": 4,
+          "year": 4,
+          "major": "CS",
+          "interests": "play",
+          "religion": "chr",
+          "email": "abc@gmail.com"
+      }]
+  );
+  const [data, setData] = useState();
+  const keys = Object.keys(accounts[0]);
 
   // to display accounts data
-  useEffect(() => {
-    fetch("/accounts", {
-      method:"GET", headers: {
-        "Content-Type": "application/json",
-        'Accept': 'application/json'
-      },
-  }).then(
-      res => res.json()
-    ).then(
-      jsondata => {
-        setData(jsondata);
-        console.log(jsondata);
-      }
-    )
-  }, [])
+  // useEffect(() => {
+  //   fetch("/accounts", {
+  //     method:"GET", headers: {
+  //       "Content-Type": "application/json",
+  //       'Accept': 'application/json'
+  //     },
+  // }).then(
+  //     res => res.json()
+  //   ).then(
+  //     jsondata => {
+  //       setData(jsondata);
+  //       console.log(jsondata);
+  //     }
+  //   )
+  // }, [])
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -137,7 +185,7 @@ function App() {
       </form>
       <h2 className='results-heading'>Your Matches</h2>
       <div className='results-container'>
-        {data.map((item, i) => (
+        {accounts.map((item, i) => (
           <div key={i} className="person-entry">
             <h2>{item["name"]}</h2>
             <ul>
