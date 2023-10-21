@@ -72,14 +72,6 @@ def accounts():
     }
 
     accounts.append(new_account)
-
-    # Write processing code here
-    # // Start Code
-
-
-
-    # // End Code
-    
     accounts = jsonify(accounts)
 
     def getJson():
