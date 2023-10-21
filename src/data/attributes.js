@@ -20,6 +20,7 @@ export const attributes = {
         "Outdoor"
     ],
     "religion": [
+        "Nonreligious",
         "Christian",
         "Muslim",
         "Jewish",

@@ -4,6 +4,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 250%;
+  text-align: center;
+  margin: auto;
 }
 
 .header {
@@ -14,7 +16,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 40px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -54,6 +56,7 @@
   margin: 10px 20px;
   gap: 20px;
   border-radius: 10px;
+  max-width: 700px;
 
   & label {
     display: block;
@@ -80,4 +83,22 @@
 .age-input {
   flex-basis: 20%;
   max-width: 50px;
+}
+
+.results-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+  gap: 20px;
+  background-color: rgb(85, 59, 91);
+  color: white;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.person-entry {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(114, 56, 122);
+  border-radius: 10px;
 }

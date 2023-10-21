@@ -10,7 +10,7 @@ def accounts():
     # Store accounts in JSON
     accounts = [
         {
-            "name": "name1",
+            "name": "Real Mark",
             "year": 4,
             "major": 2,
             "age": 23,
@@ -19,7 +19,7 @@ def accounts():
             "dietpref": 0   
         },
         {
-            "name": "name2",
+            "name": "Fake Mark",
             "year": 2,
             "major": 1,
             "age": 19,
@@ -28,7 +28,7 @@ def accounts():
             "dietpref": 1
         },
         {
-            "name": "name3",
+            "name": "Mark Bot",
             "year": 3,
             "major": 5,
             "age": 20,
