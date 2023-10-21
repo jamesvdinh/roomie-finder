@@ -1,0 +1,58 @@
+[
+    {
+        "name": "kid",
+        "age": 19,
+        "gender": "male",
+        "num_roommates": 4,
+        "year": 1,
+        "major": "CS",
+        "interests": "no",
+        "religion": "budd",
+        "email": "kid@gmail.com"
+
+    },
+    {
+        "name": "adult",
+        "age": 25,
+        "gender": "male",
+        "num_roommates": 4,
+        "year": 3,
+        "major": "CS",
+        "interests": "la",
+        "religion": "chr",
+        "email": "adult@gmail.com"
+    },
+    {
+        "name": "girl",
+        "age": 27,
+        "gender": "female",
+        "num_roommates": 4,
+        "year": 1,
+        "major": "Data",
+        "interests": "ball",
+        "religion": "dao",
+        "email": "girl@gmail.com"
+    },
+    {
+        "name": "abc",
+        "age": 22,
+        "gender": "female",
+        "num_roommates": 4,
+        "year": 4,
+        "major": "CS",
+        "interests": "play",
+        "religion": "chr",
+        "email": "abc@gmail.com"
+    },
+    {
+        "name": "input",
+        "age": 24,
+        "gender": "male",
+        "num_roommates": 4,
+        "year": 2,
+        "major": "CS",
+        "interests": "no",
+        "religion": "dao",
+        "email": "input@gmail.com"
+    }
+]
