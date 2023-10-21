@@ -6,10 +6,11 @@ function App() {
   const [accounts, setAccounts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/accounts", {
+    fetch("/accounts", {
       method:"GET", headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+        'Accept': 'application/json'
+      },
   }).then(
       res => res.json()
     ).then(

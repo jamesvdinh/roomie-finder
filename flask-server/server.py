@@ -1,7 +1,9 @@
-from flask import Flask, json, request
+from flask import Flask, jsonify, json, request
+from flask_cors import CORS
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/accounts", methods=["GET", "POST"], strict_slashes=False)
 def accounts():
@@ -58,7 +60,7 @@ def accounts():
 
     # // End Code
     
-    return accounts
+    return jsonify(accounts)
 
 if __name__ == "__main__":
     app.run(debug=True)

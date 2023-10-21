@@ -2,9 +2,7 @@
   "name": "roomie-finder",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "target": "localhost:5000/"
-  },
+  "proxy": "http://127.0.0.1:5000",
   "dependencies": {
     "@pyscript/core": "^0.2.9",
     "@testing-library/jest-dom": "^5.17.0",
