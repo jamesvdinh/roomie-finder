@@ -10,7 +10,6 @@ app = Flask(__name__)
 @app.route("/accounts", methods=["GET", "POST"], strict_slashes=False)
 def accounts():
     # Store accounts in JSON
-    # request.headers.set("Content-Type", "application/json")
     accounts = [
     {
         "name": "kid",
@@ -73,8 +72,15 @@ def accounts():
     }
 
     accounts.append(new_account)
-    accounts = jsonify(accounts)
 
+    # Write processing code here
+    # // Start Code
+
+
+
+    # // End Code
+    
+    accounts = jsonify(accounts)
 
     def getJson():
         data = []
