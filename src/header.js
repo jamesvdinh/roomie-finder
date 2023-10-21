@@ -138,11 +138,11 @@ function App() {
       <h2 className='results-heading'>Your Matches</h2>
       <div className='results-container'>
         {data.map((item, i) => (
-          <div class="person-entry">
-            <h2 key={i}>{item["name"]}</h2>
+          <div key={i} className="person-entry">
+            <h2>{item["name"]}</h2>
             <ul>
-              {keys.map((key) => (
-                <li>{key}: {item[key]}</li>
+              {keys.map((key, index) => (
+                <li key={index}>{key}: {item[key]}</li>
               ))}
             </ul>
           </div>
