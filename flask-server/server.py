@@ -1,10 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, json, request
 import json
 
 app = Flask(__name__)
 
-@app.route("/accounts")
+@app.route("/accounts", methods=["GET", "POST"], strict_slashes=False)
 def accounts():
+    # Store accounts in JSON
+    # request.headers.set("Content-Type", "application/json")
     accounts = [
         {
             "name": "name1",
@@ -34,10 +36,12 @@ def accounts():
             "dietpref": 1
         }
     ]
+    # data = request.get_json()
+    # print(data)
 
     new_account = {
-        "name": "name4",
-        "year": 3,
+        "name": "name",
+        "year": "age",
         "major": 5,
         "age": 20,
         "gender": 0,
@@ -46,6 +50,13 @@ def accounts():
     }
 
     accounts.append(new_account)
+
+    # Write processing code here
+    # // Start Code
+
+
+
+    # // End Code
     
     return accounts
 
