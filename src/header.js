@@ -23,6 +23,7 @@ function App() {
 
   return (
     <header className='header'>
+      <h1 className='title'>Roomie Finder</h1>
       <form action="/accounts" method='post'>
         <div className='criteria'>
             <input className='name-input' id="name-input" name="name" type="text" placeholder="Name"></input>
@@ -37,7 +38,6 @@ function App() {
                   <option value={item} key={index}>{item}</option>
                 ))}
             </select>
-            
             <select className='interests-input' id="intersts-input">
               {attributes["interests"].map((item, index) => (
                   <option value={item} key={index}>{item}</option>
