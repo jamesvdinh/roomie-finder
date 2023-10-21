@@ -70,19 +70,19 @@ function App() {
 
   return (
     <header className='header'>
-      <form action="/accounts" method='post'>
+      <form onSubmit={handleSubmit}>
       <h1 className='title'>Roomie Finder</h1>
         <div className='criteria'>
           <div className="input_container">
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input className='name-input' id="name-input" type="text" name="name" value={formData["name"]} onChange={handleChange} placeholder="Name"></input>
           </div>
             <div className="input_container">
-              <label for="age">Age</label>
+              <label htmlFor="age">Age</label>
               <input className='age-input' id="age-input" type="number" name="age" value={formData["age"]} onChange={handleChange} placeholder="Age"></input>
             </div>
             <div className="input_container">
-              <label for="year">Year</label>
+              <label htmlFor="year">Year</label>
               <select className='year' id="year-input" name="year" value={formData["year"]} onChange={handleChange}>
                 {attributes["years"].map((item, index) => (
                   <option value={item} key={index}>{item}</option>
@@ -90,32 +90,40 @@ function App() {
               </select>
             </div>
             <div className="input_container">
-              <label for="major">Major</label>
-              <select className='major' id="major-input" name="major" value={formData["major"]}>
+              <label htmlFor="major">Major</label>
+              <select className='major' id="major-input" name="major" value={formData["major"]} onChange={handleChange}>
                 {attributes["majors"].map((item, index) => (
                     <option value={item} key={index}>{item}</option>
                   ))}
               </select>
             </div>
             <div className="input_container">
-              <label for="interests">What type of person are you?</label>
-              <select className='interests-input' id="intersts-input" name="interests">
+              <label htmlFor="religion">Religion</label>
+              <select className='religion' id="religion-input" name="religion" value={formData["religion"]} onChange={handleChange}>
+                {attributes["religion"].map((item, index) => (
+                    <option value={item} key={index}>{item}</option>
+                  ))}
+              </select>
+            </div>
+            <div className="input_container">
+              <label htmlFor="interests">What type of person are you?</label>
+              <select className='interests-input' id="intersts-input" name="interests" value={formData["interests"]} onChange={handleChange}>
                 {attributes["interests"].map((item, index) => (
                     <option value={item} key={index}>{item}</option>
                   ))}
               </select>
             </div>
             <div className="input_container">
-              <label for="gender">Gender</label>
-              <select className='gender-input' id="gender-input" name="gender">
+              <label htmlFor="gender">Gender</label>
+              <select className='gender-input' id="gender-input" name="gender" value={formData["gender"]} onChange={handleChange}>
                 {attributes["gender"].map((item, index) => (
                     <option value={item} key={index}>{item}</option>
                   ))}
               </select>
             </div>
             <div className="input_container">
-              <label for="diet">Diet</label>
-              <select className='diet-input' id="diet-input" name="diet">
+              <label htmlFor="diet">Diet</label>
+              <select className='diet-input' id="diet-input" name="diet" value={formData["diet"]} onChange={handleChange}>
                 {attributes["diet"].map((item, index) => (
                     <option value={item} key={index}>{item}</option>
                   ))}
