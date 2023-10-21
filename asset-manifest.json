@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/roomie-finder/static/css/main.2c10d602.css",
+    "main.js": "/roomie-finder/static/js/main.273caea1.js",
+    "static/js/787.eb58d723.chunk.js": "/roomie-finder/static/js/787.eb58d723.chunk.js",
+    "index.html": "/roomie-finder/index.html",
+    "main.2c10d602.css.map": "/roomie-finder/static/css/main.2c10d602.css.map",
+    "main.273caea1.js.map": "/roomie-finder/static/js/main.273caea1.js.map",
+    "787.eb58d723.chunk.js.map": "/roomie-finder/static/js/787.eb58d723.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c10d602.css",
+    "static/js/main.273caea1.js"
+  ]
+}
