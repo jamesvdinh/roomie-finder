@@ -18,6 +18,8 @@
   font-size: 30px;
   border-radius: 10px;
   margin: auto;
+  display: flex;
+  justify-content: center;
 
   &:hover {
     filter: brightness(0.9);

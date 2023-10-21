@@ -38,11 +38,12 @@ def accounts():
             "dietpref": 1
         }
     ]
-    # data = request.get_json()
-    # print(data)
+    data = request.get_json()
+    name = data.get("name")
+    print(name)
 
     new_account = {
-        "name": "name",
+        "name": name,
         "year": "age",
         "major": 5,
         "age": 20,
