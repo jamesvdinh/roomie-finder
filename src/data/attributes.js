@@ -26,5 +26,14 @@ export const attributes = {
         "Buddhist",
         "Athiest",
         "Agnostic",
+    ],
+    "gender": [
+        "Male",
+        "Female",
+        "Other"
+    ],
+    "diet": [
+        "Vegan",
+        "Normal"
     ]
 }
