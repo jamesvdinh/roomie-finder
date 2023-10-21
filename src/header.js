@@ -70,7 +70,8 @@ function App() {
 
   return (
     <header className='header'>
-      <form onSubmit={handleSubmit}>
+      <form action="/accounts" method='post'>
+      <h1 className='title'>Roomie Finder</h1>
         <div className='criteria'>
             <input className='name-input' id="name-input" type="text" name="name" value={formData["name"]} onChange={handleChange} placeholder="Name"></input>
             <input className='age-input' id="age-input" type="number" name="age" value={formData["age"]} onChange={handleChange} placeholder="Age"></input>

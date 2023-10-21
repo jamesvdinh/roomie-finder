@@ -1,9 +1,9 @@
 export const attributes = {
     "years": [
-        "first",
-        "second",
-        "third",
-        "fourth"
+        "First",
+        "Second",
+        "Third",
+        "Fourth"
     ],
     "majors": [
         "Arts and Humanities",
@@ -16,8 +16,8 @@ export const attributes = {
         "Trades and Personal Services"
     ],
     "interests": [
-        "indoor",
-        "outdoor"
+        "Indoor",
+        "Outdoor"
     ],
     "religion": [
         "Christian",
