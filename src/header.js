@@ -15,7 +15,7 @@ function App() {
   const [accounts, setAccounts] = useState(
     [
       {
-          "name": "kid",
+          "name": "Fake Mark",
           "age": 19,
           "gender": "male",
           "num_roommates": 4,
@@ -27,7 +27,7 @@ function App() {
   
       },
       {
-          "name": "adult",
+          "name": "Real Mark",
           "age": 25,
           "gender": "male",
           "num_roommates": 4,
@@ -38,7 +38,7 @@ function App() {
           "email": "adult@gmail.com"
       },
       {
-          "name": "girl",
+          "name": "Mark Bot",
           "age": 27,
           "gender": "female",
           "num_roommates": 4,
@@ -49,7 +49,7 @@ function App() {
           "email": "girl@gmail.com"
       },
       {
-          "name": "abc",
+          "name": "Not Mark",
           "age": 22,
           "gender": "female",
           "num_roommates": 4,
