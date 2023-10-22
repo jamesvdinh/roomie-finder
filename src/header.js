@@ -23,7 +23,7 @@ function App() {
           "major": "CS",
           "interests": "no",
           "religion": "budd",
-          "email": "kid@gmail.com"
+          "instagram": "@fakemark"
   
       },
       {
@@ -35,7 +35,7 @@ function App() {
           "major": "CS",
           "interests": "la",
           "religion": "chr",
-          "email": "adult@gmail.com"
+          "instagram": "@realmark"
       },
       {
           "name": "Mark Bot",
@@ -46,7 +46,7 @@ function App() {
           "major": "Data",
           "interests": "ball",
           "religion": "dao",
-          "email": "girl@gmail.com"
+          "instagram": "@markbot"
       },
       {
           "name": "Not Mark",
@@ -57,7 +57,7 @@ function App() {
           "major": "CS",
           "interests": "play",
           "religion": "chr",
-          "email": "abc@gmail.com"
+          "instagram": "@notmark"
       }]
   );
   const [data, setData] = useState();
