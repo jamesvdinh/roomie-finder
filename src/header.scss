@@ -86,7 +86,7 @@
 }
 
 .results-container {
-  display: flex;
+  display: none;
   flex-flow: row wrap;
   max-width: 1000px;
   gap: 20px;
@@ -101,4 +101,8 @@
   margin: 10px;
   background-color: rgb(114, 56, 122);
   border-radius: 10px;
+}
+
+.shown {
+  display: flex;
 }
