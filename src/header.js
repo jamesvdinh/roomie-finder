@@ -181,10 +181,12 @@ function App() {
             </select>
           </div>
         </div>
-        <input type='submit' className='searchBtn' value='submit'></input>
+        <input type='submit' className='searchBtn' value='submit' onClick={() => {
+          document.getElementById('results-container').classList.add('shown');
+        }}></input>
       </form>
       <h2 className='results-heading'>Your Matches</h2>
-      <div className='results-container'>
+      <div className='results-container' id="results-container">
         {accounts.map((item, i) => (
           <div key={i} className="person-entry">
             <h2>{item["name"]}</h2>
