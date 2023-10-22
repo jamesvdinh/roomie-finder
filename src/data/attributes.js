@@ -36,5 +36,11 @@ export const attributes = {
     "diet": [
         "Vegan",
         "Normal"
+    ],
+    "numroom": [
+        "1",
+        "2",
+        "3",
+        "4"
     ]
 }

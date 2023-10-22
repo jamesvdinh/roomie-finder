@@ -22,7 +22,6 @@ function App() {
           "year": 1,
           "major": "CS",
           "interests": "no",
-          "religion": "budd",
           "instagram": "@fakemark"
   
       },
@@ -34,7 +33,6 @@ function App() {
           "year": 3,
           "major": "CS",
           "interests": "la",
-          "religion": "chr",
           "instagram": "@realmark"
       },
       {
@@ -45,7 +43,6 @@ function App() {
           "year": 1,
           "major": "Data",
           "interests": "ball",
-          "religion": "dao",
           "instagram": "@markbot"
       },
       {
@@ -56,7 +53,6 @@ function App() {
           "year": 4,
           "major": "CS",
           "interests": "play",
-          "religion": "chr",
           "instagram": "@notmark"
       }]
   );
@@ -149,9 +145,9 @@ function App() {
             </select>
           </div>
           <div className="input_container">
-            <label htmlFor="religion">Religion</label>
-            <select className='religion' id="religion-input" name="religion" value={formData["religion"]} onChange={handleChange}>
-              {attributes["religion"].map((item, index) => (
+            <label htmlFor="numroom"># of roomates</label>
+            <select className='numroom' id="numroom-input" name="numroom" value={formData["nunmroom"]} onChange={handleChange}>
+              {attributes["numroom"].map((item, index) => (
                   <option value={item} key={index}>{item}</option>
                 ))}
             </select>
@@ -179,6 +175,10 @@ function App() {
                   <option value={item} key={index}>{item}</option>
                 ))}
             </select>
+          </div>
+          <div className="input_container">
+            <label htmlFor="insta">Instagram @</label>
+            <input className='insta-input' id="insta-input" type="text" name="insta" value={formData["insta"]} onChange={handleChange} placeholder="@"></input>
           </div>
         </div>
         <input type='submit' className='searchBtn' value='submit' onClick={() => {
